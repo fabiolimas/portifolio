@@ -328,7 +328,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="formulario">
-                            <form action="#" method="post">
+                            <form action="#" method="post" data-aos="fade-left" data-aos-duration="1000">
                                 <input type="text" name="nome" id="nome" class="form-control mb-3" placeholder="Digite seu nome">
                                 <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Digite seu e-mail">
 
