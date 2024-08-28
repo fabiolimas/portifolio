@@ -1,7 +1,8 @@
 
-body{
-
+button.navbar-toggler.collapsed {
+    background: #fff;
 }
+
 span.tagsLogo {
     font-size: 27px;
     color: #4b30c0;
@@ -214,3 +215,36 @@ button.btn.btnAction {
     font-size: 18px;
     font-weight: 100;
   }
+  @media only screen and (max-width: 600px) {
+    button.navbar-toggler {
+        background: #fff;
+    }
+    .formulario {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    .screenshot {
+        width: auto;
+
+    }
+    .btncontato {
+        margin-bottom: 75px;
+
+    }
+    body {
+        width: 300px;
+    }
+    form.aos-init.aos-animate {
+        width: 347px;
+    }
+    .main {
+        width: min-content;
+    }
+    div#hoome {
+
+        width: 100%;
+
+        /* width: 100vw; */
+    }
+    }

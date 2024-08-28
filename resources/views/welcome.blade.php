@@ -94,7 +94,7 @@
         <div class="container">
             <div class="row mt-3" id="projetos">
                 <h2>Projetos</h2>
-                <div class="row cardProject mt-3 mb-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="row cardProject mt-3 mb-3" data-aos="fd" data-aos-duration="1000">
                     <div class="col-md-6">
                         <div class="screenshot">
                             <img src="{{ asset('assets/img/1.jpg') }}" class="w-100">
@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 {{-- 3 --}}
-                <div class="row cardProject mt-3 mb-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
                     <div class="col-md-6">
                         <div class="screenshot">
                             <img src="{{ asset('assets/img/1.jpg') }}" class="w-100">
@@ -328,7 +328,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="formulario">
-                            <form action="#" method="post" data-aos="fade-left" data-aos-duration="1000">
+                            <form action="#" method="post" data-aos="fade-right" data-aos-duration="1000" >
                                 <input type="text" name="nome" id="nome" class="form-control mb-3" placeholder="Digite seu nome">
                                 <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Digite seu e-mail">
 
