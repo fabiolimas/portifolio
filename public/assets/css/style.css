@@ -1,0 +1,216 @@
+
+body{
+
+}
+span.tagsLogo {
+    font-size: 27px;
+    color: #4b30c0;
+    font-weight: bold;
+    text-shadow: 1px 0px 4px #340ae7;
+}
+
+.nav-link{
+    color: #8166f5;
+}
+.nav-link:hover{
+    color:#fff;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(255 255 255);
+}
+
+div#hoome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    background:#212529;
+    width: 100vw;
+
+}
+
+.iam {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+
+  }
+  .fullstack{
+    color: #4b30c0;
+  }
+
+  .navbar-brand:hover{
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  li.nav-item {
+    margin-left: 29px;
+}
+
+  div#projetos, div#habilidades, div#contato {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.imagemAtendimento {
+    width: 62%;
+    margin: 39px;
+}
+.formulario {
+    margin: 39px;
+}
+form {
+
+    width: 486px;
+    height: 100%;
+}
+input, textarea {
+    border: 1px solid #4b30c0 !important;
+    padding: 11px !important;
+}
+.degrade {
+    background-image: linear-gradient(180deg, #ffffff, #ffffff00);
+    width: 100vw;
+    height: 67px;
+    /* position: absolute; */
+}
+.row.contatos {
+
+    display: flex;
+    align-items: center;
+}
+.iconSkill {
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+button.btn.btn-success {
+
+    background: #4b30c0;
+}
+.titleSkill {
+    color: #1c1c1c;
+    text-align: center;
+    /* width: fit-content; */
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+h2{
+    color: #1c1c1c;
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #4b30c0;
+    width: fit-content !important;
+}
+
+
+.screenshot {
+    width: 374px;
+    display: block;
+    margin: 0 auto;
+    border-radius: center;
+
+}
+.screenshot img {
+    border-radius: 17px;
+}
+
+.row.cardProject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    /* border: 2px solid #4b30c0; */
+    padding: 17px;
+    background: #1c1c1c;
+
+    /* background-image: url(../img/6.jpg); */
+    border-radius: 7px;
+    /* box-shadow: 0px 0px 9px 3px #4b30c0; */
+
+
+}
+
+h3.tituloProjeto {
+    text-align: center;
+    margin-bottom: 44px;
+}
+.descricao {
+    margin-bottom: 28px;
+}
+.actionsBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+button.btn.btnAction {
+    color: #fff;
+    border: 1px solid #4b30c0;
+    width: 64%;
+}
+
+
+
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #4b30c0;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+    border-radius: 5px !important;
+  }
+
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #4b30c0;
+  }
+
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  .btncontato{
+    width: 200px;
+    margin: 16px;
+  }
+
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
