@@ -38,11 +38,11 @@
                             <a class="nav-link active" aria-current="page" href="#hoome"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projetos"><i class="fa-solid fa-sliders"></i> Projetos</a>
+                            <a class="nav-link" href="#projetos"><i class="fa-brands fa-react"></i> Projetos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#habilidades"><i class="fa-brands fa-react"></i> Habilidades</a>
-                        </li>
+                        {{-- <li class="nav-item">
+                            <a class="nav-link" href="#habilidades"> Habilidades</a>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="#contato"> <i class="fa-regular fa-message"></i> Contato</a>
                         </li>
@@ -275,92 +275,7 @@
                     </div>
                 </div>
             </section>
-            <section class="row mt-4" id="habilidades">
 
-                <div class="row row d-flex justify-content-center align-itens-center"> <h2>Habilidades</h2></div>
-                <div class="row">
-
-                    <div class="row mt-4">
-                        <div class="col-md-4">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/html.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>FrontEnd</p>
-                            </div>
-                            <div class="divisor"></div>
-                            <ul>
-                                <li class="skill"><img src="{{ asset('assets/img/html.png') }}" class="w-100"><span class="titleSkill">
-                                    <p>Html</p>
-                                </span> </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/css.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/js.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/php.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>PHP</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/mysql.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>Mysql</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>Bootstrap</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/laravel.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>Laravel</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="iconSkill">
-                                <img src="{{ asset('assets/img/wordperss.png') }}" class="w-100">
-                            </div>
-                            <div class="titleSkill">
-                                <p>Wordpress</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-
-
-            </section>
             <section class="row mt-4" id="contato">
                 <div class="row row d-flex justify-content-center align-itens-center"> <h2>Contato</h2></div>
                 <div class="row contatos">
