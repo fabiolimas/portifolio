@@ -13,15 +13,17 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary"
             style="border-bottom: 1px solid #4b30c0;  background: #212529 !important; font-size: 17px;
-       position:fixed; width: 100vw;">
+       position:fixed; width: 100vw; z-index:1;">
             <div class="container">
                 <a class="navbar-brand" href="#" style="color: #fff;"><span class="tagsLogo">
                         < </span>Fábio<span class="tagsLogo">/></span></a>
@@ -33,7 +35,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
+                            <a class="nav-link active" aria-current="page" href="#hoome"><i class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projetos"><i class="fa-solid fa-sliders"></i> Projetos</a>
@@ -50,8 +52,10 @@
             </div>
         </nav>
     </header>
-    <div class="main">
-        <div class="row" id="hoome">
+    <div class="main" >
+
+        <section class="row" id="hoome">
+            <div id="particles-js"></div>
             <h1><span class="animate__animated animate__fadeIn animate__delay-1s">Oi, </span> <span
                     class="animate__animated animate__fadeIn animate__delay-2s">eu sou Fábio
                     Lima</span> </h1>
@@ -90,10 +94,12 @@
                 </div>
             </div>
 
-        </div>
-        <div class="container">
-            <div class="row mt-3" id="projetos">
-                <h2>Projetos</h2>
+        </section>
+        <div class="container" >
+
+            <section class="row mt-3" id="projetos">
+                <div class="row row d-flex justify-content-center align-itens-center"> <h2>Projetos</h2></div>
+
                 <div class="row cardProject mt-3 mb-3" data-aos="fd" data-aos-duration="1000">
                     <div class="col-md-6">
                         <div class="screenshot">
@@ -236,10 +242,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4" id="habilidades">
+            </section>
+            <section class="row mt-4" id="habilidades">
 
-                <h2>Habilidades</h2>
+                <div class="row row d-flex justify-content-center align-itens-center"> <h2>Habilidades</h2></div>
                 <div class="row">
                     <div class="row mt-4">
                         <div class="col-md-3">
@@ -315,9 +321,9 @@
 
 
 
-            </div>
-            <div class="row mt-4" id="contato">
-                <h2>Contato</h2>
+            </section>
+            <section class="row mt-4" id="contato">
+                <div class="row row d-flex justify-content-center align-itens-center"> <h2>Contato</h2></div>
                 <div class="row contatos">
                     <div class="degrade"></div>
                     <div class="col-md-6"  data-aos="fade-right" data-aos-duration="1000">
@@ -352,7 +358,7 @@
 
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -362,11 +368,139 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll("nav ul li a");
 
+        window.onscroll = () => {
+            let current = "";
 
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute("id");
+                }
+            });
 
-    </script>
+            navLi.forEach(a => {
+                a.classList.remove("active");
+                if (a.getAttribute("href").includes(current)) {
+                    a.classList.add("active");
+                }
+            });
+        };
+    });
+</script>
 </body>
 
 </html>
