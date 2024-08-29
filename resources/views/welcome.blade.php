@@ -65,7 +65,7 @@
             <div class="row btncontato">
                 <div class="container">
                     <div class="center">
-                        <a href="#contato">
+                        <a href="https://github.com/fabiolimas" target="_blank">
                             <button class="animate__animated animate__fadeIn animate__delay-2s btn">
                                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -81,7 +81,7 @@
             <div class="btncontato">
                 <div class="container">
                     <div class="center">
-                        <a href="#contato">
+                        <a href="https://www.linkedin.com/in/f%C3%A1bio-lima-739b19181/" target="_blank">
                             <button class="animate__animated animate__fadeIn animate__delay-2s btn">
                                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -95,12 +95,16 @@
             </div>
 
         </section>
+        <div class="skills">
+            <marquee><img src="{{ asset('assets/img/html.png') }}" class="w-100">  <img src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}" class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img src="{{ asset('assets/img/wordperss.png') }}" class="w-100"> | <img src="{{ asset('assets/img/html.png') }}" class="w-100">  <img src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}" class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img src="{{ asset('assets/img/wordperss.png') }}" class="w-100"> | <img src="{{ asset('assets/img/html.png') }}" class="w-100">  <img src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}" class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img src="{{ asset('assets/img/wordperss.png') }}" class="w-100"></marquee>
+        </div>
         <div class="container" >
 
             <section class="row mt-3" id="projetos">
                 <div class="row row d-flex justify-content-center align-itens-center"> <h2>Projetos</h2></div>
 
                 <div class="row cardProject mt-3 mb-3" data-aos="fd" data-aos-duration="1000">
+                    <div id="particles-js"></div>
                     <div class="col-md-6">
                         <div class="screenshot">
                             <img src="{{ asset('assets/img/1.jpg') }}" class="w-100">
@@ -112,7 +116,17 @@
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus magnam
                             assumenda praesentium quibusdam ipsa magni ab culpa porro tempore saepe, ex debitis autem
                             quam, at voluptatum, harum tempora vero!
+
                         </div>
+                        <div class="row">
+                            @php
+                                $array=['PHP','Laravel','Javascript']
+                            @endphp
+                            @foreach($array as $item)
+                            <div class="col-md-3 tec">{{$item}}</div>
+
+                        @endforeach
+                    </div>
                         <div class="row actionsBtn">
                             <div class="col-md-6">
                                 <div class="container">
@@ -157,6 +171,15 @@
                             assumenda praesentium quibusdam ipsa magni ab culpa porro tempore saepe, ex debitis autem
                             quam, at voluptatum, harum tempora vero!
                         </div>
+                        <div class="row">
+                            @php
+                                $array=['PHP','Laravel','Javascript']
+                            @endphp
+                            @foreach($array as $item)
+                            <div class="col-md-3 tec">{{$item}}</div>
+
+                        @endforeach
+                    </div>
                         <div class="row actionsBtn">
                             <div class="col-md-6">
                                 <div class="container">
@@ -209,6 +232,15 @@
                             assumenda praesentium quibusdam ipsa magni ab culpa porro tempore saepe, ex debitis autem
                             quam, at voluptatum, harum tempora vero!
                         </div>
+                        <div class="row">
+                            @php
+                                $array=['PHP','Laravel','Javascript']
+                            @endphp
+                            @foreach($array as $item)
+                            <div class="col-md-3 tec">{{$item}}</div>
+
+                        @endforeach
+                    </div>
                         <div class="row actionsBtn">
                             <div class="col-md-6">
                                 <div class="container">
@@ -247,14 +279,21 @@
 
                 <div class="row row d-flex justify-content-center align-itens-center"> <h2>Habilidades</h2></div>
                 <div class="row">
+
                     <div class="row mt-4">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="iconSkill">
                                 <img src="{{ asset('assets/img/html.png') }}" class="w-100">
                             </div>
                             <div class="titleSkill">
-                                <p>HTML</p>
+                                <p>FrontEnd</p>
                             </div>
+                            <div class="divisor"></div>
+                            <ul>
+                                <li class="skill"><img src="{{ asset('assets/img/html.png') }}" class="w-100"><span class="titleSkill">
+                                    <p>Html</p>
+                                </span> </li>
+                            </ul>
                         </div>
                         <div class="col-md-3">
                             <div class="iconSkill">
@@ -325,7 +364,7 @@
             <section class="row mt-4" id="contato">
                 <div class="row row d-flex justify-content-center align-itens-center"> <h2>Contato</h2></div>
                 <div class="row contatos">
-                    <div class="degrade"></div>
+
                     <div class="col-md-6"  data-aos="fade-right" data-aos-duration="1000">
                         <div class="imagemAtendimento">
                             <img src="{{asset('assets/img/atendimento.png')}}" class="w-100">
