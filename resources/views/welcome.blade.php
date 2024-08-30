@@ -130,7 +130,7 @@
                     <h2>Projetos</h2>
                 </div>
 
-                <div class="row cardProject mt-3 mb-3" data-aos="fd" data-aos-duration="1000">
+                <div class="row cardProject mt-3 mb-3"  data-aos="fade-right" data-aos-duration="1000">
 
                     <div class="col-md-6">
                         <div class="screenshot">
