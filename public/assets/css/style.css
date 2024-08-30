@@ -24,7 +24,7 @@ span.tagsLogo {
 }
 
 section#hoome {
-    height: 88vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,13 +70,13 @@ section#hoome {
 }
 .skills {
     border-top: 2px solid #212529;
-    border-bottom: 2px solid #212529;
+
     display: flex;
-    background: #000000;
+    background: rgb(33 37 41);
 }
 .skills img {
-    width: 78px !important;
-    filter: grayscale(1);
+    width: 53px !important;
+    margin-left: 36px;
 }
 
 form {
@@ -134,7 +134,7 @@ h2{
 
 
 .screenshot {
-    width: 374px;
+    width: 469px;
     display: block;
     margin: 0 auto;
     border-radius: center;
@@ -144,12 +144,12 @@ h2{
     border-radius: 17px;
 }
 .tec {
-    background: #ccc;
+    background: #4b30c0;
     margin: 9px;
     border-radius: 12px;
     padding: 5px;
     text-align: center;
-    color: #1c1c1c;
+    width: 79px;
 
 }
 
@@ -163,7 +163,7 @@ h2{
     padding: 17px;
     background: #1c1c1c;
     width: 84%;
-
+    height:387px;
     border-radius: 7px;
 
 

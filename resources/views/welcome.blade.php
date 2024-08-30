@@ -9,10 +9,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -35,7 +34,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#hoome"><i class="fa-solid fa-house"></i> Home</a>
+                            <a class="nav-link active" aria-current="page" href="#hoome"><i
+                                    class="fa-solid fa-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projetos"><i class="fa-brands fa-react"></i> Projetos</a>
@@ -52,7 +52,7 @@
             </div>
         </nav>
     </header>
-    <div class="main" >
+    <div class="main">
 
         <section class="row" id="hoome">
             <div id="particles-js"></div>
@@ -96,37 +96,63 @@
 
         </section>
         <div class="skills">
-            <marquee><img src="{{ asset('assets/img/html.png') }}" class="w-100">  <img src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}" class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img src="{{ asset('assets/img/wordperss.png') }}" class="w-100"> | <img src="{{ asset('assets/img/html.png') }}" class="w-100">  <img src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}" class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img src="{{ asset('assets/img/wordperss.png') }}" class="w-100"> | <img src="{{ asset('assets/img/html.png') }}" class="w-100">  <img src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}" class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img src="{{ asset('assets/img/wordperss.png') }}" class="w-100"></marquee>
+            <marquee><img src="{{ asset('assets/img/html.png') }}" class="w-100"> <img
+                    src="{{ asset('assets/img/css.png') }}" class="w-100"><img src="{{ asset('assets/img/js.png') }}"
+                    class="w-100"><img src="{{ asset('assets/img/php.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/wordperss.png') }}" class="w-100">
+                    <img src="{{ asset('assets/img/github.png') }}" class="w-100"> | <img
+                    src="{{ asset('assets/img/html.png') }}" class="w-100"> <img
+                    src="{{ asset('assets/img/css.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/js.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/php.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/wordperss.png') }}" class="w-100">
+                    <img src="{{ asset('assets/img/github.png') }}" class="w-100"> | <img
+                    src="{{ asset('assets/img/html.png') }}" class="w-100"> <img
+                    src="{{ asset('assets/img/css.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/js.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/php.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/mysql.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/bootstrap.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/laravel.png') }}" class="w-100"><img
+                    src="{{ asset('assets/img/wordperss.png') }}" class="w-100">
+                    <img src="{{ asset('assets/img/github.png') }}" class="w-100"> </marquee>
         </div>
-        <div class="container" >
+        <div class="container">
 
             <section class="row mt-3" id="projetos">
-                <div class="row row d-flex justify-content-center align-itens-center"> <h2>Projetos</h2></div>
+                <div class="row row d-flex justify-content-center align-itens-center">
+                    <h2>Projetos</h2>
+                </div>
 
                 <div class="row cardProject mt-3 mb-3" data-aos="fd" data-aos-duration="1000">
-                    <div id="particles-js"></div>
+
                     <div class="col-md-6">
                         <div class="screenshot">
-                            <img src="{{ asset('assets/img/1.jpg') }}" class="w-100">
+                            <img src="{{ asset('assets/img/campeonato_gamer/home.png') }}" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6 text-#fff">
-                        <h3 class="tituloProjeto">Titulo Projeto</h3>
+                        <h3 class="tituloProjeto">Campeonato Gamer</h3>
                         <div class="descricao">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus magnam
-                            assumenda praesentium quibusdam ipsa magni ab culpa porro tempore saepe, ex debitis autem
-                            quam, at voluptatum, harum tempora vero!
+                           Sistema de gerenciamento de campeontos online, sistema completo com cadastro de usuários,
+                           gerenciamento de campeonatos, com atribuição de rankings dos participantes mediante
+                           o seu desempenho nos jogos.
 
                         </div>
                         <div class="row">
                             @php
-                                $array=['PHP','Laravel','Javascript']
+                                $array = ['PHP', 'Laravel', 'Javascript'];
                             @endphp
-                            @foreach($array as $item)
-                            <div class="col-md-3 tec">{{$item}}</div>
-
-                        @endforeach
-                    </div>
+                            @foreach ($array as $item)
+                                <div class="col-md-3 tec">{{ $item }}</div>
+                            @endforeach
+                        </div>
                         <div class="row actionsBtn">
                             <div class="col-md-6">
                                 <div class="container">
@@ -165,21 +191,19 @@
                 <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
 
                     <div class="col-md-6 text-#fff">
-                        <h3 class="tituloProjeto">Titulo Projeto</h3>
+                        <h3 class="tituloProjeto">DSF</h3>
                         <div class="descricao">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus magnam
-                            assumenda praesentium quibusdam ipsa magni ab culpa porro tempore saepe, ex debitis autem
-                            quam, at voluptatum, harum tempora vero!
+                           Sistema gerenciador de exames, contando com controle de usuarios por nivel de acesso, cadastro de clientes,
+                           cadastro de exames, agendamentos, e geração de resultado de exame em PDF.
                         </div>
                         <div class="row">
                             @php
-                                $array=['PHP','Laravel','Javascript']
+                                $array = ['PHP', 'Laravel', 'Javascript'];
                             @endphp
-                            @foreach($array as $item)
-                            <div class="col-md-3 tec">{{$item}}</div>
-
-                        @endforeach
-                    </div>
+                            @foreach ($array as $item)
+                                <div class="col-md-3 tec">{{ $item }}</div>
+                            @endforeach
+                        </div>
                         <div class="row actionsBtn">
                             <div class="col-md-6">
                                 <div class="container">
@@ -214,7 +238,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="screenshot">
-                            <img src="{{ asset('assets/img/1.jpg') }}" class="w-100">
+                            <img src="{{ asset('assets/img/dsf/home.png') }}" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -222,25 +246,23 @@
                 <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
                     <div class="col-md-6">
                         <div class="screenshot">
-                            <img src="{{ asset('assets/img/1.jpg') }}" class="w-100">
+                            <img src="{{ asset('assets/img/ibrea/home.png') }}" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6 text-#fff">
-                        <h3 class="tituloProjeto">Titulo Projeto</h3>
+                        <h3 class="tituloProjeto">Sistema Ibrea</h3>
                         <div class="descricao">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus magnam
-                            assumenda praesentium quibusdam ipsa magni ab culpa porro tempore saepe, ex debitis autem
-                            quam, at voluptatum, harum tempora vero!
+                           Site editavel com CMS proprio, desenvolvido para fazer a edição das paginas de forma dinamica, utilizando
+                           o famework Laravel cada seção do site pode ser gerenciada de forma individual.
                         </div>
                         <div class="row">
                             @php
-                                $array=['PHP','Laravel','Javascript']
+                                $array = ['PHP', 'Laravel', 'Javascript'];
                             @endphp
-                            @foreach($array as $item)
-                            <div class="col-md-3 tec">{{$item}}</div>
-
-                        @endforeach
-                    </div>
+                            @foreach ($array as $item)
+                                <div class="col-md-3 tec">{{ $item }}</div>
+                            @endforeach
+                        </div>
                         <div class="row actionsBtn">
                             <div class="col-md-6">
                                 <div class="container">
@@ -277,37 +299,43 @@
             </section>
 
             <section class="row mt-4" id="contato">
-                <div class="row row d-flex justify-content-center align-itens-center"> <h2>Contato</h2></div>
+                <div class="row row d-flex justify-content-center align-itens-center">
+                    <h2>Contato</h2>
+                </div>
                 <div class="row contatos">
 
-                    <div class="col-md-6"  data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="imagemAtendimento">
-                            <img src="{{asset('assets/img/atendimento.png')}}" class="w-100">
+                            <img src="{{ asset('assets/img/atendimento.png') }}" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
                             <div class="formulario">
-                            <form action="#" method="post" data-aos="fade-right" data-aos-duration="1000" >
-                                <input type="text" name="nome" id="nome" class="form-control mb-3" placeholder="Digite seu nome">
-                                <input type="email" name="email" id="email" class="form-control mb-3" placeholder="Digite seu e-mail">
+                                <form action="#" method="post" data-aos="fade-right" data-aos-duration="1000">
+                                    <input type="text" name="nome" id="nome" class="form-control mb-3"
+                                        placeholder="Digite seu nome">
+                                    <input type="email" name="email" id="email" class="form-control mb-3"
+                                        placeholder="Digite seu e-mail">
 
 
-                                <textarea name="mensagem" id="" cols="30" rows="5" class="form-control mb-3" placeholder="digite sua mensagem"></textarea>
+                                    <textarea name="mensagem" id="" cols="30" rows="5" class="form-control mb-3"
+                                        placeholder="digite sua mensagem"></textarea>
 
-                                <div class="container">
-                                    <div class="center">
-                                        <button class="btn btn-success">
-                                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                                            </svg>
-                                            <span><i class="fa-solid fa-paper-plane"></i> Enviar</span>
-                                        </button>
+                                    <div class="container">
+                                        <div class="center">
+                                            <button class="btn btn-success">
+                                                <svg width="180px" height="60px" viewBox="0 0 180 60"
+                                                    class="border">
+                                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                                </svg>
+                                                <span><i class="fa-solid fa-paper-plane"></i> Enviar</span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
+                                </form>
+                            </div>
                         </div>
 
                     </div>
@@ -323,138 +351,138 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS('particles-js', {
-        "particles": {
-            "number": {
-                "value": 80,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#ffffff"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                }
-            },
-            "opacity": {
-                "value": 0.5,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 3,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#ffffff",
-                "opacity": 0.4,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 6,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 400,
-                    "line_linked": {
-                        "opacity": 1
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
                     }
                 },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
+                "color": {
+                    "value": "#ffffff"
                 },
-                "repulse": {
-                    "distance": 200,
-                    "duration": 0.4
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
                 },
-                "push": {
-                    "particles_nb": 4
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
                 },
-                "remove": {
-                    "particles_nb": 2
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
                 }
-            }
-        },
-        "retina_detect": true
-    });
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll("section");
-        const navLi = document.querySelectorAll("nav ul li a");
-
-        window.onscroll = () => {
-            let current = "";
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                    current = section.getAttribute("id");
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
                 }
-            });
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll("section");
+            const navLi = document.querySelectorAll("nav ul li a");
 
-            navLi.forEach(a => {
-                a.classList.remove("active");
-                if (a.getAttribute("href").includes(current)) {
-                    a.classList.add("active");
-                }
-            });
-        };
-    });
-</script>
+            window.onscroll = () => {
+                let current = "";
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLi.forEach(a => {
+                    a.classList.remove("active");
+                    if (a.getAttribute("href").includes(current)) {
+                        a.classList.add("active");
+                    }
+                });
+            };
+        });
+    </script>
 </body>
 
 </html>
