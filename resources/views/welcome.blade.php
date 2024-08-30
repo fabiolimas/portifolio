@@ -134,7 +134,7 @@
 
                     <div class="col-md-6">
                         <div class="screenshot">
-                            <img src="{{ asset('assets/img/campeonato_gamer/home.png') }}" class="w-100">
+                            <img src="{{ asset('assets/img/campeonato_gamer/home.PNG') }}" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6 text-#fff">
@@ -238,7 +238,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="screenshot">
-                            <img src="{{ asset('assets/img/dsf/home.png') }}" class="w-100">
+                            <img src="{{ asset('assets/img/dsf/home.PNG') }}" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -246,7 +246,7 @@
                 <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
                     <div class="col-md-6">
                         <div class="screenshot">
-                            <img src="{{ asset('assets/img/ibrea/home.png') }}" class="w-100">
+                            <img src="{{ asset('assets/img/ibrea/home.PNG') }}" class="w-100">
                         </div>
                     </div>
                     <div class="col-md-6 text-#fff">
