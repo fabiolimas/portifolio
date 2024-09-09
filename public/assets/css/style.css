@@ -152,6 +152,12 @@ h2{
     width: 79px;
 
 }
+.alert.alert-success.alert-dismissible.fade.show {
+    position: absolute;
+    top: 76px;
+    z-index: 999;
+    width: -webkit-fill-available;
+}
 
 .row.cardProject {
     display: flex;
@@ -252,6 +258,9 @@ button.btn.btnAction {
     button.navbar-toggler {
         background: #fff;
     }
+    nav.navbar.navbar-expand-lg.bg-body-tertiary {
+        width:391px;
+    }
     .formulario {
         margin: 0;
         padding: 0;
@@ -266,18 +275,34 @@ button.btn.btnAction {
 
     }
     body {
-        width: 300px;
+        width: 414px;
     }
     form.aos-init.aos-animate {
-        width: 347px;
+        width: 373px;
     }
     .main {
         width: min-content;
     }
-    div#hoome {
+    section#hoome {
 
-        width: 100%;
+        width: 414px;
+    }
+    .skills {
 
-        /* width: 100vw; */
+        width: 414px;
     }
+    .row.cardProject {
+
+
+
+        width: 414px;
+        height: 133%;
+
+        margin-left: -110px;
+
     }
+    .row.actionsBtn .center {
+        position: relative;
+        margin: 10px auto;
+    }
+}

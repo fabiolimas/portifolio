@@ -18,7 +18,24 @@
 </head>
 
 <body>
-
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="d-flex align-items-center ">
+            <i class="ti ti-circle-check-filled me-2"></i>
+            <span>{{ session('success') }} </span>
+        </div>
+    </div>
+@endif
+@if ($errors->any())
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="d-flex align-items-center ">
+            <i class="ti ti-alert-triangle-filled me-2"></i>
+            <span>Ouve um erro no formulário! </span>
+        </div>
+    </div>
+@endif
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary"
             style="border-bottom: 1px solid #4b30c0;  background: #212529 !important; font-size: 17px;
@@ -132,7 +149,7 @@
 
                 <div class="row cardProject mt-3 mb-3"  data-aos="fade-right" data-aos-duration="1000">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 imgprojeto">
                         <div class="screenshot">
                             <img src="{{ asset('assets/img/campeonato_gamer/home.PNG') }}" class="w-100">
                         </div>
@@ -157,12 +174,12 @@
                             <div class="col-md-6">
                                 <div class="container">
                                     <div class="center">
-                                        <button class="btn">
+                                        <a href="https://painel.campeonatogamer.com.br/" target="_blank"><button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                             </svg>
-                                            <span><i class="fa-solid fa-eye"></i> DEPLOY</span>
+                                            <span><i class="fa-solid fa-eye"></i> DEPLOY</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -190,6 +207,11 @@
                 {{-- 2 --}}
                 <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
 
+                    <div class="col-md-6 imgprojeto">
+                        <div class="screenshot">
+                            <img src="{{ asset('assets/img/dsf/home.PNG') }}" class="w-100">
+                        </div>
+                    </div>
                     <div class="col-md-6 text-#fff">
                         <h3 class="tituloProjeto">DSF</h3>
                         <div class="descricao">
@@ -208,13 +230,14 @@
                             <div class="col-md-6">
                                 <div class="container">
                                     <div class="center">
+                                        <a href="https://dsf.indutivatecnologia.com/" target="_blank">
                                         <button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                             </svg>
                                             <span><i class="fa-solid fa-eye"></i> DEPLOY</span>
-                                        </button>
+                                        </button></a>
                                     </div>
                                 </div>
                             </div>
@@ -223,12 +246,13 @@
 
                                 <div class="container">
                                     <div class="center">
+                                        <a href="https://github.com/fabiolimas/dsf_farmacias_laravel" target="_blank">
                                         <button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                             </svg>
-                                            <span><i class="fa-brands fa-github"></i> GITHUB</span>
+                                            <span><i class="fa-brands fa-github"></i> GITHUB</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -236,16 +260,12 @@
 
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="screenshot">
-                            <img src="{{ asset('assets/img/dsf/home.PNG') }}" class="w-100">
-                        </div>
-                    </div>
+
                 </div>
                 {{-- 3 --}}
                 <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
                     <div class="col-md-6">
-                        <div class="screenshot">
+                        <div class="screenshot imgprojeto">
                             <img src="{{ asset('assets/img/ibrea/home.PNG') }}" class="w-100">
                         </div>
                     </div>
@@ -267,12 +287,13 @@
                             <div class="col-md-6">
                                 <div class="container">
                                     <div class="center">
+                                        <a href="https://aprendizibrea.indutivatecnologia.com/" target="_blank">
                                         <button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                             </svg>
-                                            <span><i class="fa-solid fa-eye"></i> DEPLOY</span>
+                                            <span><i class="fa-solid fa-eye"></i> DEPLOY</span></a>
                                         </button>
                                     </div>
                                 </div>
@@ -281,14 +302,14 @@
 
 
                                 <div class="container">
-                                    <div class="center">
+                                    <div class="center"><a href="https://github.com/ibrea/aprendiz" target="_blank">
                                         <button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                             </svg>
                                             <span><i class="fa-brands fa-github"></i> GITHUB</span>
-                                        </button>
+                                        </button></a>
                                     </div>
                                 </div>
                             </div>
@@ -312,19 +333,20 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="formulario">
-                                <form action="#" method="post" data-aos="fade-right" data-aos-duration="1000">
+                                <form action="{{route('send-mail')}}" method="post" data-aos="fade-right" data-aos-duration="1000">
+                                    @csrf
                                     <input type="text" name="nome" id="nome" class="form-control mb-3"
-                                        placeholder="Digite seu nome">
+                                        placeholder="Digite seu nome" required>
                                     <input type="email" name="email" id="email" class="form-control mb-3"
-                                        placeholder="Digite seu e-mail">
+                                        placeholder="Digite seu e-mail" required>
 
 
                                     <textarea name="mensagem" id="" cols="30" rows="5" class="form-control mb-3"
-                                        placeholder="digite sua mensagem"></textarea>
+                                        placeholder="digite sua mensagem" required></textarea>
 
                                     <div class="container">
                                         <div class="center">
-                                            <button class="btn btn-success">
+                                            <button class="btn btn-success" type="submit">
                                                 <svg width="180px" height="60px" viewBox="0 0 180 60"
                                                     class="border">
                                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
