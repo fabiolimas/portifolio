@@ -259,7 +259,8 @@ button.btn.btnAction {
         background: #fff;
     }
     nav.navbar.navbar-expand-lg.bg-body-tertiary {
-        width:391px;
+        position: relative !important;
+        width: auto !important;
     }
     .formulario {
         margin: 0;
