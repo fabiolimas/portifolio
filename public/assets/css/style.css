@@ -81,7 +81,7 @@ section#hoome {
 
 form {
     width: 486px;
-    height: 394px;
+    height: 439px;
     background: #212529;
     padding: 19px;
     position: relative;
@@ -212,6 +212,11 @@ button.btn.btnAction {
     outline: none;
     transition: 1s ease-in-out;
   }
+  .col-md-2.conta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
   svg {
@@ -280,6 +285,7 @@ button.btn.btnAction {
     }
     form.aos-init.aos-animate {
         width: 373px;
+        height: 464px;
     }
     .main {
         width: min-content;

@@ -12,14 +12,25 @@ class MailController extends Controller
 {
     public function index(Request $request){
 
-        $mailData=[
-            'title'=>'Contato',
-            'email'=>$request->email,
-            'nome'=>$request->nome,
-            'body'=>$request->mensagem,
-        ];
+$result=$request->result;
 
-        Mail::to('sac@lojasimagem.com.br')->send(new ContatoSite($mailData));
+if($result == 13){
+    $mailData=[
+        'title'=>'Contato',
+        'email'=>$request->email,
+        'nome'=>$request->nome,
+        'body'=>$request->mensagem,
+    ];
+
+
+    Mail::to('suporte@lojasimagem.com.br')->send(new ContatoSite($mailData));
+
+
+}else{
+    return redirect('/')->withErrors('Erro no resultado da soma!');
+
+}
+
 
 
 

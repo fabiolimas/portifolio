@@ -344,6 +344,16 @@
                                     <textarea name="mensagem" id="" cols="30" rows="5" class="form-control mb-3"
                                         placeholder="digite sua mensagem" required></textarea>
 
+                                        <div class="row">
+                                            <div class="col-md-2 conta">
+                                                5 + 8 =
+                                            </div>
+                                            <div class="col-md-3 mb-2">
+                                                <input type="number" name="result" class="form-control" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
                                     <div class="container">
                                         <div class="center">
                                             <button class="btn btn-success" type="submit">
@@ -356,6 +366,7 @@
                                             </button>
                                         </div>
                                     </div>
+                                </div>
                                 </form>
                             </div>
                         </div>
@@ -363,6 +374,7 @@
                     </div>
                 </div>
             </section>
+            <section id="footer" style="height: 500px"></section>
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -491,10 +503,12 @@
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    if (pageYOffset >= sectionTop - sectionHeight / sections.length) {
                         current = section.getAttribute("id");
                     }
+                    console.log(sectionHeight);
                 });
+
 
                 navLi.forEach(a => {
                     a.classList.remove("active");
