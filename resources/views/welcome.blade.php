@@ -88,7 +88,7 @@
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                 </svg>
-                                <span> <i class="fa-brands fa-github"></i> Solicite um Orçamento </span>
+                                <span> Solicite um Orçamento </span>
                             </button>
                         </a>
                         {{-- <a href="https://github.com/fabiolimas" target="_blank">
