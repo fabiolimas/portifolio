@@ -73,16 +73,25 @@
 
         <section class="row" id="hoome">
             <div id="particles-js"></div>
-            <h1><span class="animate__animated animate__fadeIn animate__delay-1s">Oi, </span> <span
-                    class="animate__animated animate__fadeIn animate__delay-2s">eu sou Fábio
-                    Lima</span> </h1>
+            <h1> <span
+                    class="animate__animated animate__fadeIn animate__delay-2s">Onde o código dá vida às ideias.
+                   </span> </h1>
 
-            <h4 class="animate__animated animate__fadeIn animate__delay-2s">Desenvolvedor de Software<span
-                    class="fullstack"> FullStack</span></h4>
+            {{-- <h4 class="animate__animated animate__fadeIn animate__delay-2s">Desenvolvedor de Software<span
+                    class="fullstack"> FullStack</span></h4> --}}
             <div class="row btncontato">
                 <div class="container">
                     <div class="center">
-                        <a href="https://github.com/fabiolimas" target="_blank">
+                        <a href="#contato" target="_blank">
+                            <button class="animate__animated animate__fadeIn animate__delay-2s btn">
+                                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                </svg>
+                                <span> <i class="fa-brands fa-github"></i> Solicite um Orçamento </span>
+                            </button>
+                        </a>
+                        {{-- <a href="https://github.com/fabiolimas" target="_blank">
                             <button class="animate__animated animate__fadeIn animate__delay-2s btn">
                                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -90,12 +99,12 @@
                                 </svg>
                                 <span> <i class="fa-brands fa-github"></i> GitHub</span>
                             </button>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
 
             </div>
-            <div class="btncontato">
+            {{-- <div class="btncontato">
                 <div class="container">
                     <div class="center">
                         <a href="https://www.linkedin.com/in/f%C3%A1bio-lima-739b19181/" target="_blank">
@@ -109,7 +118,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </section>
         <div class="skills">
