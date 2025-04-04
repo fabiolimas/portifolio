@@ -23,7 +23,7 @@ if($result == 13){
     ];
 
 
-    Mail::to('suporte@lojasimagem.com.br')->send(new ContatoSite($mailData));
+    Mail::to('contato@genesiscode.com.br')->send(new ContatoSite($mailData));
 
 
 }else{
