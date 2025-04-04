@@ -78,7 +78,7 @@
                    </span> </h1>
 
            <h4 class="animate__animated animate__fadeIn animate__delay-2s"> Desenvolvemos sistemas e sites de alta performance para o seu negócio crescer no digital!<span
-                    class="fullstack"> Solicite um orçamento e comece hoje mesmo</span></h4>
+                    class="fullstack"><br> Solicite um orçamento e comece hoje mesmo</span></h4>
             <div class="row btncontato">
                 <div class="container">
                     <div class="center">
@@ -88,7 +88,7 @@
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                                 </svg>
-                                <span> Solicite um Orçamento </span>
+                                <span> Entre em contato </span>
                             </button>
                         </a>
                         {{-- <a href="https://github.com/fabiolimas" target="_blank">
