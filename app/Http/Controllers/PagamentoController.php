@@ -27,10 +27,16 @@ class PagamentoController extends Controller
         ]);
 
         $pagamento = $this->eduzz->criarPagamento($dados);
-        dd($pagamento);
+
 
 
 
         return redirect($pagamento['data']['checkout_url'] ?? '/erro');
+    }
+
+    public function produtosEduzz(){
+
+        $produtos=$this->eduzz->listaProdutos();
+        return view('produtos',$produtos);
     }
 }

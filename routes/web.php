@@ -42,3 +42,5 @@ Route::get('/comprar/{produto}', function ($produto) {
 
     return redirect($links[$produto] ?? '/');
 })->name('checkout');
+
+Route::get('/produtos',[PagamentoController::class, 'produtosEduzz'])->name('produtos');

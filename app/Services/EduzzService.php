@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Http;
 
 class EduzzService
 {
-    protected $baseUrl = 'https://api.eduzz.com/accounts/v1/me';
+    protected $baseUrl = 'https://api.eduzz.com/';
     protected $apiToken;
 
     public function __construct()
@@ -31,5 +31,18 @@ class EduzzService
 
 
         return $response->json();
+    }
+
+    public function listaProdutos(array $dados){
+
+        $response = Http::withToken($this->apiToken)
+            ->post($this->baseUrl . '/myeduzz/v1/products', [
+
+            ]);
+
+
+
+        return $response->json();
+
     }
 }
