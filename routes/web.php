@@ -36,6 +36,7 @@ Route::post('/webhook/eduzz', function (Request $request) {
 Route::get('/comprar/{produto}', function ($produto) {
     $links = [
         'meu-produto' => 'https://chk.eduzz.com/8WPAP6QYWP',
+        'outro-produto'=>'https://chk.eduzz.com/KW8K68P201',
 
     ];
 

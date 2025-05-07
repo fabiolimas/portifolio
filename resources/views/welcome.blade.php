@@ -387,6 +387,11 @@
                 <a href="{{ route('checkout', ['produto' => 'meu-produto']) }}" class="btn btn-success">
                     Comprar com Cartão, Pix ou Boleto
                 </a>
+
+                <a href="{{ route('checkout', ['produto' => 'outro-produto']) }}" class="btn btn-success">
+                    Comprar com Cartão, Pix ou Boleto
+                </a>
+
             </section>
         </div>
     </div>
