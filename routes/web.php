@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\MailController;
+use Log;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\PagamentoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +22,13 @@ Route::get('/', function () {
 });
 
 Route::post('send-mail',[MailController::class, 'index'])->name('send-mail');
+
+
+Route::post('/pagamento', [PagamentoController::class, 'checkout'])->name('pagamento');
+
+Route::post('/webhook/eduzz', function (Request $request) {
+    // Trate o retorno de pagamento aqui
+    Log::info('Webhook Eduzz', $request->all());
+
+    return response()->json(['status' => 'ok']);
+})->name('eduzz.webhook');
