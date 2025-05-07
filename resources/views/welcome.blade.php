@@ -384,22 +384,9 @@
                 </div>
             </section>
             <section id="footer" style="height: 500px">
-                <form method="POST" action="{{ route('pagamento') }}">
-                    @csrf
-                    <input type="text" name="name" placeholder="Nome" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="cpf" placeholder="CPF" required>
-                    <input type="text" name="phone" placeholder="Telefone" required>
-                    <select name="payment_type" required>
-                        <option value="credit_card">Cartão de Crédito</option>
-                        <option value="pix">Pix</option>
-                        <option value="boleto">Boleto</option>
-                    </select>
-                    <input type="number" name="installments" placeholder="Parcelas (opcional)">
-                    <input type="number" name="value" placeholder="Valor" required step="0.01">
-                    <input type="hidden" name="product_id" value="123456"> {{-- ID do produto na Eduzz --}}
-                    <button type="submit">Pagar</button>
-                </form>
+                <a href="{{ route('checkout', ['produto' => 'meu-produto']) }}" class="btn btn-success">
+                    Comprar com Cartão, Pix ou Boleto
+                </a>
             </section>
         </div>
     </div>

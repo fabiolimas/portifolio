@@ -32,3 +32,12 @@ Route::post('/webhook/eduzz', function (Request $request) {
 
     return response()->json(['status' => 'ok']);
 })->name('eduzz.webhook');
+
+Route::get('/comprar/{produto}', function ($produto) {
+    $links = [
+        'meu-produto' => 'https://chk.eduzz.com/8WPAP6QYWP',
+
+    ];
+
+    return redirect($links[$produto] ?? '/');
+})->name('checkout');
