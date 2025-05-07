@@ -33,7 +33,7 @@ class EduzzService
         return $response->json();
     }
 
-    public function listaProdutos(array $dados){
+    public function listaProdutos(){
 
         $response = Http::withToken($this->apiToken)
             ->post($this->baseUrl . '/myeduzz/v1/products', [
