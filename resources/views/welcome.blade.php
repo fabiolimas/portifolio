@@ -326,6 +326,60 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row cardProject mt-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-md-6">
+                        <div class="screenshot imgprojeto">
+                            <img src="{{ asset('assets/img/fostter/home.JPG') }}" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-#fff">
+                        <h3 class="tituloProjeto">Fostter Assessoria</h3>
+                        <div class="descricao">
+                           Site institucional desenvolvido com Wordpress Elementor.
+                        </div>
+                        <div class="row">
+                            @php
+                                $array = ['PHP', 'Wordpress', 'Elementor'];
+                            @endphp
+                            @foreach ($array as $item)
+                                <div class="col-md-3 tec">{{ $item }}</div>
+                            @endforeach
+                        </div>
+                        <div class="row actionsBtn">
+                            <div class="col-md-6">
+                                <div class="container">
+                                    <div class="center">
+                                        <a href="https://fostterassessoria.com.br/" target="_blank">
+                                        <button class="btn">
+                                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                            </svg>
+                                            <span><i class="fa-solid fa-eye"></i> DEPLOY</span></a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+
+                                <div class="container">
+                                    <div class="center"><a href="#" target="_blank">
+                                        <button class="btn">
+                                            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                            </svg>
+                                            <span><i class="fa-brands fa-github"></i> GITHUB</span>
+                                        </button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="row mt-4" id="contato">
