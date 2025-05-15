@@ -440,6 +440,9 @@
 
 
         </div>
+        <a href="https://wa.me/5574991381274" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" />
+</a>
         <footer id="footer" class="py-10 py-xl-15 bg-black inverted border-top">
 
             <div class="row align-items-center text-muted">
