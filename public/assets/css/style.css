@@ -243,6 +243,14 @@ button.btn.btnAction {
     width: 200px;
     margin: 16px;
   }
+  footer#footer {
+    background: #212529 !important;
+    color: #fff !important;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
   .btn span {
     color: white;
