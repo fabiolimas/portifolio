@@ -383,10 +383,20 @@
                     </div>
                 </div>
             </section>
-            <section id="footer" style="height: 500px">
-
-
-            </section>
+           <footer id="footer" class="py-10 py-xl-15 bg-black inverted border-top">
+      <div class="container">
+        <div class="row align-items-center text-muted">
+          <div class="col-6 col-lg-4 text-lg-center order-lg-2"><a href="index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a></div>
+          <div class="col-6 col-lg-4 order-lg-1">
+            <p class="eyebrow">2025 © GenesisCode</p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end order-lg-3">
+          <a class="navbar-brand" href="#" style="color: #fff;"><span class="tagsLogo">
+                        < </span>GenesisCode<span class="tagsLogo">/></span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
