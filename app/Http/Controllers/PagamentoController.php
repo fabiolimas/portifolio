@@ -36,7 +36,10 @@ class PagamentoController extends Controller
 
     public function produtosEduzz(){
 
-        $produtos=$this->eduzz->listaProdutos();
-        return view('produtos',$produtos);
+        $produtos=json_decode($this->eduzz->listaProdutos());
+
+
+
+        return view('produtos',compact('produtos'));
     }
 }

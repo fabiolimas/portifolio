@@ -239,7 +239,7 @@
                             <div class="col-md-6">
                                 <div class="container">
                                     <div class="center">
-                                        <a href="https://dsf.indutivatecnologia.com/" target="_blank">
+                                        <a href="https://dsffostter.com/login" target="_blank">
                                         <button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -296,7 +296,7 @@
                             <div class="col-md-6">
                                 <div class="container">
                                     <div class="center">
-                                        <a href="https://aprendizibrea.indutivatecnologia.com/" target="_blank">
+                                        <a href="https://ibrea.org.br/" target="_blank">
                                         <button class="btn">
                                             <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -384,13 +384,7 @@
                 </div>
             </section>
             <section id="footer" style="height: 500px">
-                <a href="{{ route('checkout', ['produto' => 'meu-produto']) }}" class="btn btn-success">
-                    Comprar com Cartão, Pix ou Boleto
-                </a>
 
-                <a href="{{ route('checkout', ['produto' => 'outro-produto']) }}" class="btn btn-success">
-                    Comprar com Cartão, Pix ou Boleto
-                </a>
 
             </section>
         </div>
