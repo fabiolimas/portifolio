@@ -32,7 +32,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <div class="d-flex align-items-center ">
             <i class="ti ti-alert-triangle-filled me-2"></i>
-            <span>Ouve um erro no formulário! </span>
+            <span>Erro ao enviar mensgem! </span>
         </div>
     </div>
 @endif
@@ -409,8 +409,19 @@
 
                                         <div class="row">
                                             <div class="col-md-2 conta">
-                                                5 + 8 =
+                                                @php 
+                                                
+                                                $v1=rand(1,9);
+                                                
+                                                $v2=rand(1,9);
+                                                
+                                                $result=$v1+$v2;
+                                                
+                                                @endphp
+                                               {{$v1}} + {{$v2}} =
                                             </div>
+                                            <input type="hidden" value="{{$v1}}" name='v1'>
+                                            <input type="hidden" value="{{$v2}}" name='v2'>
                                             <div class="col-md-3 mb-2">
                                                 <input type="number" name="result" class="form-control" required>
                                             </div>

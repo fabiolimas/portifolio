@@ -14,7 +14,13 @@ class MailController extends Controller
 
 $result=$request->result;
 
-if($result == 13){
+$v1=$request->v1;
+$v2=$request->v2;
+
+$resultado=$v1+$v2;
+
+
+if($result == $resultado){
     $mailData=[
         'title'=>'Contato',
         'email'=>$request->email,
