@@ -193,7 +193,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
 
 
                                 <div class="container">
@@ -207,7 +207,7 @@
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -250,7 +250,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
 
 
                                 <div class="container">
@@ -265,7 +265,7 @@
                                         </button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
 
 
                                 <div class="container">
@@ -321,7 +321,7 @@
                                         </button></a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
 
 
                                 <div class="container">
@@ -375,7 +375,7 @@
                                         </button></a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -409,14 +409,14 @@
 
                                         <div class="row">
                                             <div class="col-md-2 conta">
-                                                @php 
-                                                
+                                                @php
+
                                                 $v1=rand(1,9);
-                                                
+
                                                 $v2=rand(1,9);
-                                                
+
                                                 $result=$v1+$v2;
-                                                
+
                                                 @endphp
                                                {{$v1}} + {{$v2}} =
                                             </div>
