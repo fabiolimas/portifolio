@@ -134,7 +134,7 @@ h2{
 
 
 .screenshot {
-   
+
     display: block;
     margin: 0 auto;
     border-radius: center;
@@ -149,7 +149,7 @@ h2{
     border-radius: 12px;
     padding: 5px;
     text-align: center;
-    width: 79px;
+
 
 }
 .alert.alert-success.alert-dismissible.fade.show {

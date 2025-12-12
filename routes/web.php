@@ -1,6 +1,7 @@
 <?php
 
-use Log;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
@@ -17,30 +18,16 @@ use App\Http\Controllers\PagamentoController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/',[Controller::class , 'index'])->name('start');
 
 Route::post('send-mail',[MailController::class, 'index'])->name('send-mail');
 
 
-Route::post('/pagamento', [PagamentoController::class, 'checkout'])->name('pagamento');
 
-Route::post('/webhook/eduzz', function (Request $request) {
-    // Trate o retorno de pagamento aqui
-    Log::info('Webhook Eduzz', $request->all());
 
-    return response()->json(['status' => 'ok']);
-})->name('eduzz.webhook');
+Auth::routes();
 
-Route::get('/comprar/{produto}', function ($produto) {
-    $links = [
-        'meu-produto' => 'https://chk.eduzz.com/8WPAP6QYWP',
-        'outro-produto'=>'https://chk.eduzz.com/KW8K68P201',
-
-    ];
-
-    return redirect($links[$produto] ?? '/');
-})->name('checkout');
-
-Route::get('/produtos',[PagamentoController::class, 'produtosEduzz'])->name('produtos');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
