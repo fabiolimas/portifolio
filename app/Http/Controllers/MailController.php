@@ -40,6 +40,6 @@ if($result == $resultado){
 
 
 
-        return redirect('/')->withSuccess('Contato enviado com sucesso');
+        return redirect()->route('start')->withSuccess('Contato enviado com sucesso');
     }
 }
