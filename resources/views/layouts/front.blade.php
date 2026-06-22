@@ -42,7 +42,7 @@
       </head>
 <body>
     <div id="app">
-        <nav id="gc-nav" class="gc-navbar navbar navbar-expand-lg fixed-top py-3">
+        <nav id="gc-nav" class="gc-navbar navbar navbar-expand-lg fixed-top py-3 gc-scrolled">
       <div class="container">
         <a class="navbar-brand gc-brand d-flex align-items-center gap-1" href="#home">
           <span class="gc-bracket">&lt;</span>GenesisCode<span class="gc-bracket">/&gt;</span>

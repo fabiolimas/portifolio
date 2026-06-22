@@ -10,7 +10,7 @@
       <div class="container position-relative" style="z-index: 2">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
-            <span class="gc-eyebrow mb-4"><i class="bi bi-stars"></i> Desenvolvimento de software</span>
+            <span class="gc-eyebrow mb-4 "><i class="bi bi-stars"></i> Desenvolvimento de software</span>
             <h1 class="gc-hero-title mt-4">Onde o código dá <span class="gc-text-grad">vida às ideias</span>.</h1>
             <p class="gc-hero-lead gc-muted mt-4">Desenvolvemos sistemas e sites de alta performance para o seu negócio crescer no digital. Solicite um orçamento e comece hoje mesmo.</p>
             <div class="d-flex flex-wrap gap-3 mt-4">
