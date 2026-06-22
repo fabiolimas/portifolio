@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <header id="home" class="gc-hero">
       <span class="gc-orb gc-orb-1"></span>
       <span class="gc-orb gc-orb-2"></span>
@@ -43,6 +45,24 @@
         </div>
       </div>
     </header>
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="d-flex align-items-center ">
+            <i class="ti ti-circle-check-filled me-2"></i>
+            <span>{{ session('success') }} </span>
+        </div>
+    </div>
+@endif
+@if ($errors->any())
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="d-flex align-items-center ">
+            <i class="ti ti-alert-triangle-filled me-2"></i>
+            <span>Erro ao enviar mensgem! </span>
+        </div>
+    </div>
+@endif
 
     <!-- Tech marquee -->
     <section class="gc-marquee" aria-label="Tecnologias">

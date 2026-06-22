@@ -39,6 +39,10 @@ section {
     margin-top: 15px !important;
     display: block;
 }
+.alert.alert-dismissible.fade.show {
+    position: absolute;
+    top: 83px;
+}
 
 h2.display-6.fw-bold.mt-3 {
     color: #fff;
