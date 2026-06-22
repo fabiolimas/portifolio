@@ -227,7 +227,7 @@
                 </a>
                 <div class="gc-contact-row">
                   <i class="bi bi-geo-alt"></i>
-                  <span><span class="d-block gc-muted small">Atendimento</span><span class="fw-semibold">Brasil · 100% online</span></span>
+                  <span><span class="d-block gc-muted small">Atendimento</span><span class="fw-semibold text-white">Brasil · 100% online</span></span>
                 </div>
               </div>
             </div>
