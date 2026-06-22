@@ -34,7 +34,7 @@
               <pre class="gc-code-body mb-0"><span class="tk-com">// soluções sob medida</span>
 <span class="tk-key">const</span> <span class="tk-fn">genesis</span> = {
   <span class="tk-fn">missao</span>: <span class="tk-str">'transformar ideias em código'</span>,
-  <span class="tk-fn">stack</span>: [<span class="tk-str">'Laravel'</span>, <span class="tk-str">'HTML'</span>, <span class="tk-str">'PHP'</span>],
+  <span class="tk-fn">stack</span>: [<span class="tk-str">'Laravel'</span>, <span class="tk-str">'HTML'</span>, <span class="tk-str">'PHP'</span>, <span class="tk-str">'Javascript'</span>],
   <span class="tk-fn">performance</span>: <span class="tk-num">100</span>,
   <span class="tk-fn">deploy</span>() {
     <span class="tk-key">return</span> <span class="tk-str">'🚀 seu negócio no digital'</span>;
@@ -143,7 +143,8 @@
                 $tecnologias=json_decode($projeto->tecnologias);
 
 
-@endphp
+                @endphp
+
             <div class="col-md-6">
             <article class="gc-project gc-reveal">
               <div class="gc-project-thumb"><img src="{{Storage::url($projeto->capa)}}" alt="{{$projeto->titulo}}" loading="lazy" /></div>
