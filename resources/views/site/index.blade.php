@@ -191,6 +191,7 @@
           </div>
           <div class="col-lg-7">
             <form action="{{route('send-mail')}}" method="post" class="gc-contact-panel gc-reveal" id="gc-form">
+                @crsf
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label gc-muted small" for="nome">Nome</label>
