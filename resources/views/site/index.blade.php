@@ -136,72 +136,27 @@
           <p class="gc-muted mx-auto mt-3" style="max-width: 40rem">Conheça alguns sistemas e sites que desenvolvemos para nossos clientes.</p>
         </div>
         <div class="row g-4">
-             <div class="col-md-6">
+            @foreach($projetos as $projeto)
+
+                @php
+
+                $tecnologias=json_decode($projeto->tecnologias);
+
+
+@endphp
+            <div class="col-md-6">
             <article class="gc-project gc-reveal">
-              <div class="gc-project-thumb"><img src="{{asset('assets/img/lojas_imagem/imagem.JPG')}}" alt="Captura de tela do projeto Lojas Imagem" loading="lazy" /></div>
+              <div class="gc-project-thumb"><img src="{{Storage::url($projeto->capa)}}" alt="{{$projeto->titulo}}" loading="lazy" /></div>
               <div class="p-4">
-                <div class="d-flex flex-wrap gap-2 mb-3"><span class="gc-tag">PHP</span><span class="gc-tag">Laravel</span><span class="gc-tag">Javascript</span></div>
-                <h3 class="h5 fw-semibold">Lojas Imagem</h3>
-                <p class="gc-muted small mt-2">Site institucional moderno desenvolvido em Laravel.</p>
-                <a class="gc-project-link" href="https://lojasimagem.com.br/" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
+                <div class="d-flex flex-wrap gap-2 mb-3">@foreach($tecnologias as $tecnologia)<span class="gc-tag">{{$tecnologia}}</span>@endforeach</div>
+                <h3 class="h5 fw-semibold">{{$projeto->titulo}}</h3>
+                <p class="gc-muted small mt-2">{{$projeto->descricao}}</p>
+                <a class="gc-project-link" href="{{$projeto->link}}" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
               </div>
             </article>
           </div>
-              <div class="col-md-6">
-            <article class="gc-project gc-reveal">
-              <div class="gc-project-thumb"><img src="{{asset('assets/img/lojas_imagem/easyphoto.JPG')}}" alt="Captura de tela do projeto Lojas Imagem" loading="lazy" /></div>
-              <div class="p-4">
-                <div class="d-flex flex-wrap gap-2 mb-3"><span class="gc-tag">PHP</span><span class="gc-tag">Laravel</span><span class="gc-tag">Javascript</span></div>
-                <h3 class="h5 fw-semibold">Easy Photo</h3>
-                <p class="gc-muted small mt-2">Sistema completo de envio e recebimento de imagens para revelação, desenvolvido em Laravel.</p>
-                <a class="gc-project-link" href="https://easyphoto.lojasimagem.com.br/" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="gc-project gc-reveal">
-              <div class="gc-project-thumb"><img src="{{asset('assets/img/campeonato_gamer/home.PNG')}}" alt="Captura de tela do projeto Campeonato Gamer" loading="lazy" /></div>
-              <div class="p-4">
-                <div class="d-flex flex-wrap gap-2 mb-3"><span class="gc-tag">PHP</span><span class="gc-tag">Laravel</span><span class="gc-tag">JavaScript</span></div>
-                <h3 class="h5 fw-semibold">Campeonato Gamer</h3>
-                <p class="gc-muted small mt-2">Sistema de gerenciamento de campeonatos online com cadastro de usuários, rankings e atribuição automática de pontuações.</p>
-                <a class="gc-project-link" href="https://painel.campeonatogamer.com.br/" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="gc-project gc-reveal">
-              <div class="gc-project-thumb"><img src="{{asset('assets/img/dsf/home.PNG')}}" alt="Captura de tela do projeto DSF" loading="lazy" /></div>
-              <div class="p-4">
-                <div class="d-flex flex-wrap gap-2 mb-3"><span class="gc-tag">PHP</span><span class="gc-tag">Laravel</span><span class="gc-tag">JavaScript</span></div>
-                <h3 class="h5 fw-semibold">DSF</h3>
-                <p class="gc-muted small mt-2">Gerenciador de exames com controle de usuários por nível de acesso, agendamentos e geração de resultados em PDF.</p>
-                <a class="gc-project-link" href="https://dsffostter.com/login" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="gc-project gc-reveal">
-              <div class="gc-project-thumb"><img src="{{asset('assets/img/ibrea/home.PNG')}}" alt="Captura de tela do projeto Sistema Ibrea" loading="lazy" /></div>
-              <div class="p-4">
-                <div class="d-flex flex-wrap gap-2 mb-3"><span class="gc-tag">PHP</span><span class="gc-tag">Laravel</span><span class="gc-tag">JavaScript</span></div>
-                <h3 class="h5 fw-semibold">Sistema Ibrea</h3>
-                <p class="gc-muted small mt-2">Site editável com CMS próprio desenvolvido em Laravel, permitindo gerenciar cada seção de forma dinâmica.</p>
-                <a class="gc-project-link" href="https://ibrea.org.br/" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="gc-project gc-reveal">
-              <div class="gc-project-thumb"><img src="{{asset('assets/img/fostter/home.JPG')}}" alt="Captura de tela do projeto Fostter Assessoria" loading="lazy" /></div>
-              <div class="p-4">
-                <div class="d-flex flex-wrap gap-2 mb-3"><span class="gc-tag">WordPress</span><span class="gc-tag">Elementor</span><span class="gc-tag">PHP</span></div>
-                <h3 class="h5 fw-semibold">Fostter Assessoria</h3>
-                <p class="gc-muted small mt-2">Site institucional moderno desenvolvido com WordPress e Elementor, focado em apresentação de serviços.</p>
-                <a class="gc-project-link" href="https://fostterassessoria.com.br/" target="_blank" rel="noopener noreferrer">Ver projeto <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
-          </div>
+          @endforeach
+
 
         </div>
       </div>

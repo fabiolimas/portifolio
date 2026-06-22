@@ -30,4 +30,9 @@ Route::post('send-mail',[MailController::class, 'index'])->name('send-mail');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('painel/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('painel/projetos', [App\Http\Controllers\ProjetoController::class, 'index_projetos'])->name('projetos');
+Route::get('painel/projeto', [App\Http\Controllers\ProjetoController::class, 'create'])->name('projeto.create');
+Route::post('painel/projeto', [App\Http\Controllers\ProjetoController::class, 'store'])->name('projeto.store');
+
+Route::get('painel/destroy/{id}', [App\Http\Controllers\ProjetoController::class, 'destroy'])->name('projeto.destroy');
