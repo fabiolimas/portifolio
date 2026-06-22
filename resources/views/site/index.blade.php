@@ -272,9 +272,9 @@
           <div class="col-md-6">
             <div class="d-flex gap-3 justify-content-md-end">
               <a class="gc-social" href="https://wa.me/5574991381274" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-              <a class="gc-social" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
-              <a class="gc-social" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a class="gc-social" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a class="gc-social" href="https://github.com/fabiolimas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              {{-- <a class="gc-social" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a> --}}
+              <a class="gc-social" href="https://www.linkedin.com/in/f%C3%A1bio-lima-739b19181/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
