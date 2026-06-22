@@ -20,9 +20,12 @@ $v2=$request->v2;
 $resultado=$v1+$v2;
 
 
+
+
 if($result == $resultado){
     $mailData=[
         'title'=>'Contato',
+        'assunto'=>$request->assunto,
         'email'=>$request->email,
         'nome'=>$request->nome,
         'body'=>$request->mensagem,

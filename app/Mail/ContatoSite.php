@@ -28,7 +28,7 @@ class ContatoSite extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contato Site - '.$this->mailData['nome'],
+            subject: $this->mailData['assunto'].' - '.$this->mailData['nome'],
         );
     }
 

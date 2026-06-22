@@ -59,7 +59,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <div class="d-flex align-items-center ">
             <i class="ti ti-alert-triangle-filled me-2"></i>
-            <span>Erro ao enviar mensgem! </span>
+            <span>Erro ao enviar mensgem! {{$errors}}</span>
         </div>
     </div>
 @endif
@@ -215,19 +215,19 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label gc-muted small" for="nome">Nome</label>
-                  <input id="nome" type="text" class="form-control gc-form-control" placeholder="Seu nome" required />
+                  <input id="nome" type="text" class="form-control gc-form-control" name="nome" placeholder="Seu nome" required />
                 </div>
                 <div class="col-md-6">
                   <label class="form-label gc-muted small" for="email">E-mail</label>
-                  <input id="email" type="email" class="form-control gc-form-control" placeholder="voce@email.com" required />
+                  <input id="email" type="email" name="email" class="form-control gc-form-control" placeholder="voce@email.com" required />
                 </div>
                 <div class="col-12">
                   <label class="form-label gc-muted small" for="assunto">Assunto</label>
-                  <input id="assunto" type="text" class="form-control gc-form-control" placeholder="Ex: site institucional, sistema web..." />
+                  <input id="assunto" type="text" name="assunto" class="form-control gc-form-control" placeholder="Ex: site institucional, sistema web..." />
                 </div>
                 <div class="col-12">
                   <label class="form-label gc-muted small" for="msg">Mensagem</label>
-                  <textarea id="msg" rows="4" class="form-control gc-form-control" placeholder="Conte um pouco sobre o seu projeto" required></textarea>
+                  <textarea id="msg" rows="4" name="mensagem" class="form-control gc-form-control" placeholder="Conte um pouco sobre o seu projeto" required></textarea>
                 </div>
                  <div class="row mt-2">
                                             <div class="col-md-2 conta">
@@ -245,7 +245,7 @@
                                             <input type="hidden" value="{{$v1}}" name='v1'>
                                             <input type="hidden" value="{{$v2}}" name='v2'>
                                             <div class="col-md-3 mb-2">
-                                                <input type="number" name="result " class="form-control gc-form-control" required>
+                                                <input type="number" name="result" class="form-control gc-form-control" required>
                                             </div>
 
                                         </div>
