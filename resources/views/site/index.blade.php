@@ -302,17 +302,17 @@
       });
 
       // Contact form -> WhatsApp
-      var form = document.getElementById("gc-form");
-      if (form) {
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          window.open(
-            "https://wa.me/5574991381274?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento.",
-            "_blank",
-            "noopener,noreferrer"
-          );
-        });
-      }
+    //   var form = document.getElementById("gc-form");
+    //   if (form) {
+    //     form.addEventListener("submit", function (e) {
+    //       e.preventDefault();
+    //       window.open(
+    //         "https://wa.me/5574991381274?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento.",
+    //         "_blank",
+    //         "noopener,noreferrer"
+    //       );
+    //     });
+    //   }
     </script>
 
 @endsection
