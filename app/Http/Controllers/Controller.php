@@ -17,7 +17,7 @@ class Controller extends BaseController
      public function index(Request $request)
     {
 
-    $projetos=Projeto::all();
+    $projetos=Projeto::where('status','Publicado')->get();
         return view('site.index', compact('projetos'));
     }
 }

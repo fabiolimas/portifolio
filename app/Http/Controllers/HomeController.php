@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Projeto;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,14 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
+            $projetos=Projeto::join('categorias','categorias.id','projetos.categoria')
+            ->select('projetos.*', 'categorias.nome as cat_nome')
+            ->paginate(20);
 
-        return view('painel.home');
+            $total_projetos=Projeto::all()->count();
+            $rascunhos=Projeto::where('status','Rascunho')->count();
+            $publicados=Projeto::where('status','Publicado')->count();
+
+        return view('painel.home',compact('projetos','total_projetos','rascunhos','publicados'));
     }
 }

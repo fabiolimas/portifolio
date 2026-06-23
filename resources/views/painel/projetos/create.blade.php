@@ -1,73 +1,90 @@
-@extends('adminlte::page')
+@extends('layouts.painel')
 
-@section('title', 'Projetos')
+@section('title', 'Novo Projeto')
 
-@section('content_header')
-    <h1>Novo Projeto</h1>
-@stop
+
 
 @section('content')
 
+    <section class="content">
+        <!-- Page head -->
+        <div class="page-head">
+            <div>
+                <h1 class="page-title">Novo Projeto </h1>
+                <p class="page-sub">Cadastre seus projetos.</p>
+            </div>
+            <div class="d-flex gap-2">
 
-    <div class="row">
-            <form method="post" action="{{route('projeto.store')}}" class="form" enctype="multipart/form-data" >
-                @csrf
-                <div class="row">
-                <div class="col-md-6">
-                    <label for="nome">Nome: </label>
-
-                    <input type="text" name="nome" id="nome" class="form-control">
+                <a href="{{ route('projetos') }}" class="btn-g"><i class="bi bi-arrow-left-square"></i> Voltar</a>
+            </div>
+        </div>
 
 
+
+
+        <form method="post" action="{{ route('projeto.store') }}" class="form" enctype="multipart/form-data">
+            @csrf
+            <div class="div row">
+                <div class="col-md-8">
+                    <label class="form-label">Título</label>
+                    <input class="form-control" name="nome" placeholder="Ex: Nebula Dashboard">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Categoria</label>
+                    <select class="form-select" name="categoria" required>
+                        <option value="">Selecione</option>
+                        @foreach ($categorias as $categoria)
+                            <option value="{{ $categoria->id }}">{{ $categoria->nome }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="col-12 mt-3">
+                    <label class="form-label">Descrição curta</label>
+                    <textarea class="form-control" name="descricao" rows="3" placeholder="Resumo exibido no card do portfólio"></textarea>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Link do projeto</label>
+                    <input class="form-control" name="link" placeholder="https://...">
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Tecnologias: </label>
+                    <br>
+                    <label for="php">PHP</label>
+                    <input type="checkbox" name="tecnologia[]" id="php" class="form-check-input m-2" value="PHP">
+                    <label for="laravel">Laravel</label>
+                    <input type="checkbox" name="tecnologia[]" id="laravel" class="form-check-input m-2" value="Laravel">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" name="tecnologia[]" id="javascript" class="form-check-input m-2" value="Javascript">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="tecnologia[]" id="html" class="form-check-input m-2" value="HTML">
+                    <label for="wordpress">Wordpress</label>
+                    <input type="checkbox" name="tecnologia[]" id="wordpress" class="form-check-input m-2" value="Wordpress">
+                    <label for="elementor">Elementor</label>
+                    <input type="checkbox" name="tecnologia[]" id="elementor" class="form-check-input m-2" value="Elementor">
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Status</label>
+                    <select class="form-select" name="status" required>
+                        <option value="Rascunho">Rascunho</option>
+                        <option value="Publicado">Publicado</option>
+
+                    </select>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Imagem de capa</label>
+                    <input class="form-control" type="file" name="capa" accept="image/*">
                 </div>
 
-                <div class="col-md-6">
-                    <label for="capa">Imagem de capa: </label>
 
-                    <input type="file" name="capa" id="capa" class="form-control" accept="image/*">
+                <div class="modal-footer mt-3">
 
-
+                    <button class="btn-g"><i class="bi bi-check2"></i> Salvar projeto</button>
                 </div>
+            </div>
+        </form>
+        </div>
 
-                <div class="col-md-6">
-                    <label for="">Tecnologias: </label>
-
-                    <lable for="php">PHP</lable>
-                    <input type="checkbox" name="tecnologia[]" id="php" class="form-control" value="PHP">
-                    <lable for="laravel">Laravel</lable>
-                    <input type="checkbox" name="tecnologia[]" id="laravel" class="form-control" value="Laravel">
-                    <lable for="javascript">Javascript</lable>
-                    <input type="checkbox" name="tecnologia[]" id="javascript" class="form-control" value="Javascript">
-                    <lable for="html">HTML</lable>
-                    <input type="checkbox" name="tecnologia[]" id="html" class="form-control" value="HTML">
-                     <lable for="html">Wordpress</lable>
-                    <input type="checkbox" name="tecnologia[]" id="wordpress" class="form-control" value="Wordpress">
-                     <lable for="html">Elementor</lable>
-                    <input type="checkbox" name="tecnologia[]" id="elementor" class="form-control" value="Elementor">
-
-                </div>
-
-                <div class="col-md-12">
-                    <label for="descricao">Descrição</label>
-                    <textarea name="descricao" id="descricao" class="form-control"></textarea>
-                </div>
-
-                <div class="col-md-12">
-                    <label for="link">Link</label>
-                    <input type="text" name="link" id="link" class="form-control">
-                </div>
-
-                <div class="row mt-2">
-                    <div class="col-md-3">
-                    <button type="submit" class="btn btn-primary">Salvar</button>
-                    </div>
-                </div>
-
-                </div>
-
-            </form>
-    </div>
-
+    </section>
 @stop
 
 @section('css')
@@ -76,5 +93,7 @@
 @stop
 
 @section('js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+    <script>
+        console.log("Hi, I'm using the Laravel-AdminLTE package!");
+    </script>
 @stop

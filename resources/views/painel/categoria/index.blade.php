@@ -1,24 +1,24 @@
 @extends('layouts.painel')
 
-@section('title', 'Projetos')
+@section('title', 'Categorias')
 
 @section('content')
     <section class="content">
         <!-- Page head -->
         <div class="page-head">
             <div>
-                <h1 class="page-title">Projetos </h1>
-                <p class="page-sub">Gerencie os projetos exibidos no seu site público.</p>
+                <h1 class="page-title">Categorias </h1>
+                <p class="page-sub">Gerencie as categorias cadastradas.</p>
             </div>
             <div class="d-flex gap-2">
                 <button class="btn-ghost"><i class="bi bi-download"></i> Exportar</button>
-                <a href="{{ route('projeto.create') }}" class="btn-g"><i class="bi bi-plus-lg"></i> Novo Projeto</a>
+                <a href="{{ route('categoria.create') }}" class="btn-g"><i class="bi bi-plus-lg"></i> Nova Categoria</a>
             </div>
         </div>
 
         <div class="panel">
             <div class="panel-head">
-                <h2 class="panel-title">Lista de Projetos</h2>
+                <h2 class="panel-title">Lista de Categorias</h2>
                 {{-- <div class="d-flex gap-2 flex-wrap">
                     <span class="filter-pill active">Todos</span>
                     <span class="filter-pill">Publicados</span>
@@ -30,8 +30,8 @@
                 <table class="table-g">
                     <thead>
                         <tr>
-                            <th style="width:35%">Projeto</th>
-                            <th>Categoria</th>
+                            <th style="width:35%">nome</th>
+
                             <th>Status</th>
 
 
@@ -39,25 +39,25 @@
                         </tr>
                     </thead>
                     <tbody>
-                         @foreach ($projetos as $projeto)
+                         @foreach ($categorias as $categoria)
                         <tr>
                             <td>
                                 <div class="project-cell">
-                                    <div class="thumb"><img src="{{ Storage::url($projeto->capa) }}" width="44px" height="44px"></div>
+
                                     <div>
-                                        <div>{{$projeto->nome}}</div><small>{{$projeto->descricao}}</small>
+                                        <div>{{$categoria->nome}}</div>
                                     </div>
                                 </div>
                             </td>
-                            <td>{{$projeto->cat_nome}}</td>
-                            <td><span class="badge-g @if($projeto->status == 'Publicado') badge-pub @else badge-draft @endif ">{{$projeto->status}}</span></td>
+
+                            <td><span class="badge-g @if($categoria->status == 'Ativa') badge-pub @else badge-draft @endif ">{{$categoria->status}}</span></td>
 
 
                             <td>
                                 <div class="row-actions">
                                     <button class="icon-btn" title="Ver"><i class="bi bi-eye"></i></button>
                                     <button class="icon-btn" title="Editar"><i class="bi bi-pencil"></i></button>
-                                    <a class="icon-btn" href="{{ route('projeto.destroy', $projeto->id) }}" title="Excluir"><i class="bi bi-trash"></i></a>
+                                    <a class="icon-btn" href="#" title="Excluir"><i class="bi bi-trash"></i></a>
                                 </div>
                             </td>
                         </tr>

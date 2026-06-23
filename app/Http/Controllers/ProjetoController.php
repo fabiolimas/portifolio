@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use App\Models\Projeto;
 use Illuminate\Http\Request;
 use Intervention\Image\Drivers\Imagick\Driver;
@@ -13,9 +14,11 @@ class ProjetoController extends Controller
 
 public function index_projetos(){
 
-$projetos=Projeto::all();
+$projetos=Projeto::join('categorias','categorias.id','projetos.categoria')
+->select('projetos.*', 'categorias.nome as cat_nome')
 
 
+->paginate(20);
 
 
 
@@ -25,8 +28,10 @@ $projetos=Projeto::all();
 
    public function create(){
 
+   $categorias=Categoria::where('status','Ativa')->get();
 
-    return view('painel.projetos.create');
+
+    return view('painel.projetos.create',compact('categorias'));
    }
 
    public function store(Request $request){
@@ -65,6 +70,8 @@ $projetos=Projeto::all();
             'capa'=>$imageUrl,
             'link'=>$request->link,
             'tecnologias'=>$tecnologias,
+            'status'=>$request->status,
+            'categoria'=>$request->categoria,
 
 
         ]);
