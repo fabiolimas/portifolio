@@ -45,7 +45,7 @@
                                 <div class="project-cell">
                                     <div class="thumb"><img src="{{ Storage::url($projeto->capa) }}" width="44px" height="44px"></div>
                                     <div>
-                                        <div>{{$projeto->nome}}</div><small>{{$projeto->descricao}}</small>
+                                        <div>{{$projeto->titulo}}</div><small>{{$projeto->descricao}}</small>
                                     </div>
                                 </div>
                             </td>
